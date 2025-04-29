@@ -65,11 +65,11 @@
         keypad {
             display-name = "Kp";
             bindings = <
-&kp EQUAL  &kp N1        &trans            &kp N3        &kp N4         &kp N5  &trans                                                   &mo 3      &kp N6  &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp MINUS
-&kp TAB    &none         &trans             &kp E         &kp R          &kp T   &none                                                    &none      &kp Y   &kp KP_N7   &kp KP_N8     &kp KP_N9      &kp KP_MINUS     &kp BSLH
-&kp ESC    &kp A         &trans             &kp D         &kp F          &kp G   &none     &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none      &kp H   &kp KP_N4   &kp KP_N5     &kp KP_N6      &kp KP_PLUS      &kp SQT
-&kp LSHFT  &kp Z         &kp X             &kp C         &kp V          &kp B                        &kp HOME      &kp PG_UP                        &kp N   &kp KP_N1   &kp KP_N2     &kp KP_N3      &kp KP_ENTER     &kp RSHFT
-&kp LCTRL  &kp LEFT_ALT  &kp LEFT_COMMAND  &kp LA(LEFT)  &kp LA(RIGHT)          &kp BSPC  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp KP_N0          &kp LA(UP)  &kp LA(DOWN)  &kp KP_DOT     &kp RBKT         &mo 1
+&kp EQUAL  &kp N1        &kp N2            &kp N3        &kp N4         &kp N5  &none                                                   &mo 3      &kp N6  &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp MINUS
+&kp TAB    &none         &none             &none         &none          &none   &none                                                    &none      &kp Y   &kp KP_N7   &kp KP_N8     &kp KP_N9      &kp KP_MINUS     &kp BSLH
+&kp ESC    &none         &none             &none         &none          &none   &none     &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none      &kp H   &kp KP_N4   &kp KP_N5     &kp KP_N6      &kp KP_PLUS      &kp SQT
+&kp LSHFT  &none         &none             &none         &none          &none                        &kp HOME      &kp PG_UP                        &kp N   &kp KP_N1   &kp KP_N2     &kp KP_N3      &kp KP_ENTER     &kp RSHFT
+&kp LCTRL  &kp LEFT_ALT  &none             &kp LA(LEFT)  &kp LA(RIGHT)          &kp BSPC  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp KP_N0          &kp LA(UP)  &kp LA(DOWN)  &kp KP_DOT     &kp RBKT         &mo 1
             >;
         };
 
