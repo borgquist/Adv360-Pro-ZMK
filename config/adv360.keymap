@@ -47,18 +47,18 @@
 &kp TAB     &kp Q         &kp W             &kp E     &kp R      &kp T   &kp MINUS                                                                             &kp LA(LC(LG(N2)))  &kp Y   &kp U   &kp I      &kp O     &kp P     &kp BSLH
 &mo 1       &kp A         &kp S             &kp D     &kp F      &kp G   &kp EQUAL  &kp LG(LEFT)      &kp LG(RIGHT)      &kp LG(LC(LA(C)))  &kp LA(LC(LG(R)))  &kp LA(LC(LG(N3)))  &kp H   &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
 &kp LSHFT   &kp Z         &kp X             &kp C     &kp V      &kp B                                &mo 2              &kp LA(LG(N4))                                            &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
-&kp LCTRL   &kp LEFT_ALT  &kp LEFT_COMMAND  &kp LEFT  &kp RIGHT          &kp SPACE  &kp LEFT_COMMAND  &kp LEFT           &kp RIGHT          &kp ENTER          &kp BACKSPACE               &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &kp TILDE
+&kp LCTRL   &kp LEFT_ALT  &kp LEFT_COMMAND  &kp LEFT  &kp RIGHT          &kp SPACE  &kp LEFT_COMMAND  &mo 1              &mo 1              &kp ENTER          &kp BACKSPACE               &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &kp TILDE
             >;
         };
 
         fn {
             display-name = "Fn";
             bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4              &kp F5         &kp F6  &trans                                      &mo 3   &kp F7  &kp F8            &kp F9              &kp F10         &kp F11          &kp F12
-&trans  &trans  &trans  &trans              &trans         &trans  &trans                                      &trans  &trans  &trans            &trans              &trans          &trans           &kp LG(A)
-&trans  &trans  &trans  &trans              &trans         &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans            &trans              &trans          &swedish_o       &swedish_a
-&trans  &trans  &trans  &trans              &trans         &trans                  &trans      &trans                  &trans  &trans            &trans              &trans          &trans           &trans
-&trans  &trans  &trans  &kp LA(LEFT_ARROW)  &kp LA(RIGHT)          &trans  &trans  &trans      &trans  &trans  &trans          &kp LG(UP_ARROW)  &kp LG(DOWN_ARROW)  &kp LEFT_BRACE  &kp RIGHT_BRACE  &trans
+&kp F1                    &kp F2             &kp F3             &kp F4              &kp F5             &kp F6                 &trans                                      &trans  &kp F7                 &kp F8                 &kp F9                 &kp F10         &kp F11          &kp F12
+&trans                    &trans             &trans             &kp UP              &trans             &trans                 &trans                                      &trans  &trans                 &trans                 &kp UP                 &trans          &trans           &kp LG(A)
+&kp LA(LC(LG(N0)))        &kp LA(LG(LC(K)))  &kp LEFT           &kp DOWN            &kp RIGHT          &kp LS(LA(LC(LG(E))))  &trans  &trans  &trans      &trans  &trans  &trans  &trans                 &kp LEFT               &kp DOWN               &kp RIGHT       &swedish_o       &swedish_a
+&kp LA(LG(LC(NUMBER_1)))  &kp LA(LC(LG(W)))  &kp LA(LC(LG(S)))  &kp LA(LC(LG(C)))   &kp LA(LC(LG(R)))  &trans                                 &trans      &trans                  &kp LS(LA(LC(LG(D))))  &kp LS(LA(LC(LG(C))))  &kp LS(LA(LC(LG(B))))  &trans          &trans           &trans
+&trans                    &trans             &trans             &kp LA(LEFT_ARROW)  &kp LA(RIGHT)                             &trans  &trans  &trans      &trans  &trans  &trans                         &kp LG(UP_ARROW)       &kp LG(DOWN_ARROW)     &kp LEFT_BRACE  &kp RIGHT_BRACE  &trans
             >;
         };
 
