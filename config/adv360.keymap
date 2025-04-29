@@ -52,37 +52,37 @@
         };
 
         fn {
-    display-name = "Fn";
-    bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4              &kp F5         &kp F6  &trans                                     &trans   &kp F7  &kp F8            &kp F9              &kp F10         &kp F11          &kp F12
-&trans  &trans  &trans  &trans              &trans         &trans  &trans                                     &trans   &trans  &trans            &trans              &trans          &trans           &kp LG(A)
-&trans  &trans  &trans  &trans              &trans         &trans  &trans  &trans   &trans     &trans  &trans  &trans  &trans  &trans            &trans              &trans          &swedish_o       &swedish_a
-&trans  &trans  &trans  &trans              &trans         &trans                   &trans     &trans                   &trans  &trans            &trans              &trans          &trans           &trans 
-&trans  &trans  &trans  &kp LG(LEFT_ARROW)  &kp LG(RIGHT)          &trans  &trans   &trans     &trans  &trans  &trans          &kp LG(UP_ARROW)  &kp LG(DOWN_ARROW)  &kp LEFT_BRACE  &kp RIGHT_BRACE  &trans
-    >;
-};
+            display-name = "Fn";
+            bindings = <
+&kp F1  &kp F2  &kp F3  &kp F4              &kp F5         &kp F6  &trans                                      &trans  &kp F7  &kp F8            &kp F9              &kp F10         &kp F11          &kp F12
+&trans  &trans  &trans  &trans              &trans         &trans  &trans                                      &trans  &trans  &trans            &trans              &trans          &trans           &kp LG(A)
+&trans  &trans  &trans  &trans              &trans         &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans            &trans              &trans          &swedish_o       &swedish_a
+&trans  &trans  &trans  &trans              &trans         &trans                  &trans      &trans                  &trans  &trans            &trans              &trans          &trans           &trans
+&trans  &trans  &trans  &kp LG(LEFT_ARROW)  &kp LG(RIGHT)          &trans  &trans  &trans      &trans  &trans  &trans          &kp LG(UP_ARROW)  &kp LG(DOWN_ARROW)  &kp LEFT_BRACE  &kp RIGHT_BRACE  &trans
+            >;
+        };
 
         keypad {
-    display-name = "Kp";
-    bindings = <
-&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans                                             &trans     &kp N6  &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp MINUS
-&trans    &trans        &trans            &trans        &trans         &trans  &bootloader                                             &trans     &trans  &kp KP_N7   &kp KP_N8     &kp KP_N9      &kp KP_MINUS     &kp BSLH
-&studio_unlock    &trans        &bl BL_INC            &bl BL_DEC        &bl BL_TOG         &rgb_ug RGB_TOG  &stp STP_BAT     &trans  &trans      &trans   &trans  &trans     &trans  &kp KP_N4   &kp KP_N5     &kp KP_N6      &kp KP_PLUS      &kp SQT
-&trans  &trans        &trans            &trans        &macro_ver         &trans                    &trans     &trans                        &trans  &kp KP_N1   &kp KP_N2     &kp KP_N3      &kp KP_ENTER     &trans
-&trans  &trans  &trans  &kp LA(LEFT)  &kp LA(RIGHT)          &trans  &trans    &trans       &trans  &trans  &kp KP_N0          &kp LA(UP)  &kp LA(DOWN)  &kp KP_DOT     &trans         &trans
-    >;
-};
+            display-name = "Kp";
+            bindings = <
+&trans          &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3   &bt BT_SEL 4     &trans                                            &trans     &kp N6  &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp MINUS
+&trans          &trans        &none         &trans        &trans         &trans           &bootloader                                       &trans     &trans  &kp KP_N7   &kp KP_N8     &kp KP_N9      &kp KP_MINUS     &kp BSLH
+&studio_unlock  &trans        &bl BL_INC    &bl BL_DEC    &bl BL_TOG     &rgb_ug RGB_TOG  &stp STP_BAT  &trans  &trans      &trans  &trans  &trans     &trans  &kp KP_N4   &kp KP_N5     &kp KP_N6      &kp KP_PLUS      &kp SQT
+&trans          &trans        &trans        &trans        &macro_ver     &trans                                 &trans      &trans                     &trans  &kp KP_N1   &kp KP_N2     &kp KP_N3      &kp KP_ENTER     &trans
+&trans          &trans        &trans        &kp LA(LEFT)  &kp LA(RIGHT)                   &trans        &trans  &trans      &trans  &trans  &kp KP_N0          &kp LA(UP)  &kp LA(DOWN)  &kp KP_DOT     &trans           &trans
+            >;
+        };
 
         mod {
-    display-name = "Mod";
-    bindings = <
-&trans           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans                                         &trans           &trans  &trans       &trans       &trans  &trans  &trans
-&trans           &trans        &trans        &trans        &trans        &trans        &bootloader                                   &bootloader      &trans  &trans       &trans       &trans  &trans  &trans
-&studio_unlock   &trans        &trans        &trans        &trans        &trans        &trans        &trans  &trans      &bt BT_CLR  &trans       &stp STP_BAT     &trans  &trans       &trans       &trans  &trans  &trans
-&trans           &trans        &trans        &trans        &macro_ver    &trans                       &trans      &trans                             &trans  &trans       &trans       &trans  &trans  &trans
-&trans           &trans        &trans        &trans        &trans                    &trans        &trans  &trans      &trans       &bl BL_TOG  &rgb_ug RGB_TOG         &bl BL_INC  &bl BL_DEC  &trans  &trans  &trans
-    >;
-};
+            display-name = "Mod";
+            bindings = <
+&trans          &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans                                                   &trans           &trans  &trans      &trans      &trans  &trans  &trans
+&trans          &trans        &trans        &trans        &trans        &trans        &bootloader                                              &bootloader      &trans  &trans      &trans      &trans  &trans  &trans
+&studio_unlock  &trans        &trans        &trans        &trans        &trans        &trans       &trans  &trans      &bt BT_CLR  &trans      &stp STP_BAT     &trans  &trans      &trans      &trans  &trans  &trans
+&trans          &trans        &trans        &trans        &macro_ver    &trans                             &trans      &trans                                   &trans  &trans      &trans      &trans  &trans  &trans
+&trans          &trans        &trans        &trans        &trans                      &trans       &trans  &trans      &trans      &bl BL_TOG  &rgb_ug RGB_TOG          &bl BL_INC  &bl BL_DEC  &trans  &trans  &trans
+            >;
+        };
 
         extra1 {
             display-name = "Red";
