@@ -40,28 +40,28 @@
             compatible = "zmk,behavior-macro";
             label = "EMAIL";
             #binding-cells = <0>;
-            bindings = <>;
+            bindings = <&macro_tap &str "fredrik.borgquist@gmail.com">;
         };
 
         build_ipa: build_ipa {
             compatible = "zmk,behavior-macro";
             label = "BUILD_IPA";
             #binding-cells = <0>;
-            bindings = <>;
+            bindings = <&macro_tap &str "flutter build ipa">;
         };
 
         build_appbundle: build_appbundle {
             compatible = "zmk,behavior-macro";
             label = "BUILD_APPBUNDLE";
             #binding-cells = <0>;
-            bindings = <>;
+            bindings = <&macro_tap &str "flutter build appbundle">;
         };
 
         firebase_deploy: firebase_deploy {
             compatible = "zmk,behavior-macro";
             label = "FIREBASE_DEPLOY";
             #binding-cells = <0>;
-            bindings = <>;
+            bindings = <&macro_tap &str "firebase deploy --project medicine-box-da3f1 --force">;
         };
     };
 
