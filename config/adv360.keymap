@@ -38,10 +38,39 @@
 
         email: email {
             compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp F &kp R &kp E &kp D &kp R &kp I &kp K &kp DOT &kp B &kp O &kp R &kp G &kp Q &kp U &kp I &kp S &kp T &kp AT &kp G &kp M &kp A &kp I &kp L &kp DOT &kp C &kp O &kp M>;
             label = "EMAIL";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
+            bindings =
+                <&macro_tap_time 0>
+
+                // fredrik
+                , <&macro_tap &kp F> , <&macro_tap &kp R> , <&macro_tap &kp E>
+                , <&macro_tap &kp D> , <&macro_tap &kp R> , <&macro_tap &kp I> , <&macro_tap &kp K>
+
+                // .
+                , <&macro_tap &kp DOT>
+
+                // borgquist
+                , <&macro_tap &kp B> , <&macro_tap &kp O> , <&macro_tap &kp R>
+                , <&macro_tap &kp G> , <&macro_tap &kp Q> , <&macro_tap &kp U>
+                , <&macro_tap &kp I> , <&macro_tap &kp S> , <&macro_tap &kp T>
+
+                // @
+                , <&macro_tap &kp AT>
+
+                // gmail
+                , <&macro_tap &kp G> , <&macro_tap &kp M> , <&macro_tap &kp A>
+                , <&macro_tap &kp I> , <&macro_tap &kp L>
+
+                // .
+                , <&macro_tap &kp DOT>
+
+                // com
+                , <&macro_tap &kp C> , <&macro_tap &kp O> , <&macro_tap &kp M>;
         };
+
     };
 
     keymap {
