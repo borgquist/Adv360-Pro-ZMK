@@ -4,7 +4,6 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/rgb.h>
-#include <zmk/macro.dtsi>
 
 / {
     behaviors {
@@ -36,34 +35,6 @@
             bindings = <&kp LA(U) &kp O>;
             label = "SWEDISH_O";
         };
-
-        email: email {
-            compatible = "zmk,behavior-macro-tap";
-            label = "EMAIL";
-            #binding-cells = <0>;
-            bindings = <&str "fredrik.borgquist@gmail.com">;
-        };
-
-        build_ipa: build_ipa {
-            compatible = "zmk,behavior-macro-tap";
-            label = "BUILD_IPA";
-            #binding-cells = <0>;
-            bindings = <&str "flutter build ipa">;
-        };
-
-        build_appbundle: build_appbundle {
-            compatible = "zmk,behavior-macro-tap";
-            label = "BUILD_APPBUNDLE";
-            #binding-cells = <0>;
-            bindings = <&str "flutter build appbundle">;
-        };
-
-        firebase_deploy: firebase_deploy {
-            compatible = "zmk,behavior-macro-tap";
-            label = "FIREBASE_DEPLOY";
-            #binding-cells = <0>;
-            bindings = <&str "firebase deploy --project medicine-box-da3f1 --force">;
-        };
     };
 
     keymap {
@@ -83,11 +54,11 @@
         layer1 {
             display-name = "Fn";
             bindings = <
-&trans                    &trans             &trans             &kp LA(N2)         &kp LA(LS(NUMBER_2))  &trans             &bootloader                                                                &bootloader       &trans  &none         &kp SLASH  &kp KP_MULTIPLY  &none       &kp UNDER
-&trans                    &kp LG(LEFT)       &kp LA(LEFT)       &kp UP             &kp LA(RIGHT)         &kp LG(RIGHT)      &firebase_deploy                                                           &build_ipa        &trans  &kp N7        &kp N8     &kp N9           &trans      &kp LA(A)
-&trans                    &trans             &kp LEFT           &kp DOWN           &kp RIGHT             &trans             &email            &trans  &trans      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &build_appbundle  &trans  &kp NUMBER_4  &kp N5     &kp N6           &swedish_o  &swedish_a
-&kp LA(LG(LC(NUMBER_1)))  &kp LA(LC(LG(W)))  &kp LA(LC(LG(S)))  &kp LA(LC(LG(C)))  &kp LA(LC(LG(R)))     &kp LA(LC(LG(G)))                            &trans      &trans                                                 &trans  &kp N1        &kp N2     &kp N3           &trans      &trans
-&trans                    &trans             &trans             &trans             &trans                                   &trans            &trans  &trans      &trans            &trans             &trans                    &kp N0        &none      &kp DOT          &trans      &trans
+&trans                    &trans             &trans             &kp LA(N2)         &kp LA(LS(NUMBER_2))  &trans             &bootloader                                                                     &bootloader  &trans  &none         &kp SLASH  &kp KP_MULTIPLY  &none       &kp UNDER
+&trans                    &kp LG(LEFT)       &kp LA(LEFT)       &kp UP             &kp LA(RIGHT)         &kp LG(RIGHT)      &trans                                                                          &trans       &trans  &kp N7        &kp N8     &kp N9           &trans      &kp LA(A)
+&trans                    &trans             &kp LEFT           &kp DOWN           &kp RIGHT             &trans             &kp LS(LA(LC(LG(E))))  &trans  &trans      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans       &trans  &kp NUMBER_4  &kp N5     &kp N6           &swedish_o  &swedish_a
+&kp LA(LG(LC(NUMBER_1)))  &kp LA(LC(LG(W)))  &kp LA(LC(LG(S)))  &kp LA(LC(LG(C)))  &kp LA(LC(LG(R)))     &kp LA(LC(LG(G)))                                 &trans      &trans                                            &trans  &kp N1        &kp N2     &kp N3           &trans      &trans
+&trans                    &trans             &trans             &trans             &trans                                   &trans                 &trans  &trans      &trans            &trans             &trans               &kp N0        &none      &kp DOT          &trans      &trans
             >;
 
             label = "L1";
