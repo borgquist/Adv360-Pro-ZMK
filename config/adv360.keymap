@@ -38,31 +38,31 @@
         };
 
         email: email {
-            compatible = "zmk,behavior-macro";
+            compatible = "zmk,behavior-macro-tap";
             label = "EMAIL";
             #binding-cells = <0>;
-            bindings = <&macro_tap &str "fredrik.borgquist@gmail.com">;
+            bindings = <&str "fredrik.borgquist@gmail.com">;
         };
 
         build_ipa: build_ipa {
-            compatible = "zmk,behavior-macro";
+            compatible = "zmk,behavior-macro-tap";
             label = "BUILD_IPA";
             #binding-cells = <0>;
-            bindings = <&macro_tap &str "flutter build ipa">;
+            bindings = <&str "flutter build ipa">;
         };
 
         build_appbundle: build_appbundle {
-            compatible = "zmk,behavior-macro";
+            compatible = "zmk,behavior-macro-tap";
             label = "BUILD_APPBUNDLE";
             #binding-cells = <0>;
-            bindings = <&macro_tap &str "flutter build appbundle">;
+            bindings = <&str "flutter build appbundle">;
         };
 
         firebase_deploy: firebase_deploy {
-            compatible = "zmk,behavior-macro";
+            compatible = "zmk,behavior-macro-tap";
             label = "FIREBASE_DEPLOY";
             #binding-cells = <0>;
-            bindings = <&macro_tap &str "firebase deploy --project medicine-box-da3f1 --force">;
+            bindings = <&str "firebase deploy --project medicine-box-da3f1 --force">;
         };
     };
 
