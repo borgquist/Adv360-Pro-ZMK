@@ -43,34 +43,62 @@
             wait-ms = <0>;
             tap-ms = <0>;
             bindings =
-                <&macro_tap_time 0>
-
-                // fredrik
-                , <&macro_tap &kp F> , <&macro_tap &kp R> , <&macro_tap &kp E>
-                , <&macro_tap &kp D> , <&macro_tap &kp R> , <&macro_tap &kp I> , <&macro_tap &kp K>
-
-                // .
-                , <&macro_tap &kp DOT>
-
-                // borgquist
-                , <&macro_tap &kp B> , <&macro_tap &kp O> , <&macro_tap &kp R>
-                , <&macro_tap &kp G> , <&macro_tap &kp Q> , <&macro_tap &kp U>
-                , <&macro_tap &kp I> , <&macro_tap &kp S> , <&macro_tap &kp T>
-
-                // @
-                , <&macro_tap &kp AT>
-
-                // gmail
-                , <&macro_tap &kp G> , <&macro_tap &kp M> , <&macro_tap &kp A>
-                , <&macro_tap &kp I> , <&macro_tap &kp L>
-
-                // .
-                , <&macro_tap &kp DOT>
-
-                // com
-                , <&macro_tap &kp C> , <&macro_tap &kp O> , <&macro_tap &kp M>;
+                <&macro_tap_time 0>,
+                <&macro_tap>,
+                <&kp F>,
+                <&macro_tap>,
+                <&kp R>,
+                <&macro_tap>,
+                <&kp E>,
+                <&macro_tap>,
+                <&kp D>,
+                <&macro_tap>,
+                <&kp R>,
+                <&macro_tap>,
+                <&kp I>,
+                <&macro_tap>,
+                <&kp K>,
+                <&macro_tap>,
+                <&kp DOT>,
+                <&macro_tap>,
+                <&kp B>,
+                <&macro_tap>,
+                <&kp O>,
+                <&macro_tap>,
+                <&kp R>,
+                <&macro_tap>,
+                <&kp G>,
+                <&macro_tap>,
+                <&kp Q>,
+                <&macro_tap>,
+                <&kp U>,
+                <&macro_tap>,
+                <&kp I>,
+                <&macro_tap>,
+                <&kp S>,
+                <&macro_tap>,
+                <&kp T>,
+                <&macro_tap>,
+                <&kp AT>,
+                <&macro_tap>,
+                <&kp G>,
+                <&macro_tap>,
+                <&kp M>,
+                <&macro_tap>,
+                <&kp A>,
+                <&macro_tap>,
+                <&kp I>,
+                <&macro_tap>,
+                <&kp L>,
+                <&macro_tap>,
+                <&kp DOT>,
+                <&macro_tap>,
+                <&kp C>,
+                <&macro_tap>,
+                <&kp O>,
+                <&macro_tap>,
+                <&kp M>;
         };
-
     };
 
     keymap {
@@ -79,11 +107,11 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&kp ESCAPE  &kp N1        &kp N2     &kp N3    &kp N4     &kp N5  &kp PLUS                                                                                               &mo 2               &kp N6  &kp N7  &kp N8     &kp N9   &kp N0    &kp MINUS
-&kp TAB     &kp Q         &kp W      &kp E     &kp R      &kp T   &kp MINUS                                                                                              &kp LA(LC(LG(N2)))  &kp Y   &kp U   &kp I      &kp O    &kp P     &kp BSLH
-&mo 1       &kp A         &kp S      &kp D     &kp F      &kp G   &email     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS      &kp LEFT_BRACE            &kp RIGHT_BRACE  &kp LA(LC(LG(N3)))  &kp H   &kp J   &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LSHFT   &kp Z         &kp X      &kp C     &kp V      &kp B                                    &kp LS(LG(N4))             &kp LA(LC(LG(N3)))                                             &kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
-&kp LCTRL   &kp LEFT_ALT  &kp MINUS  &kp PLUS  &kp EQUAL          &kp SPACE  &kp LEFT_COMMAND      &mo 1                      &kp LA(LC(LG(NUMBER_2)))  &kp ENTER        &kp BACKSPACE               &none   &none      &none    &none     &kp TILDE
+&kp ESCAPE  &kp N1        &kp N2     &kp N3    &kp N4     &kp N5  &kp PLUS                                                                                     &mo 2               &kp N6  &kp N7  &kp N8     &kp N9     &kp N0    &kp MINUS
+&kp TAB     &kp Q         &kp W      &kp E     &kp R      &kp T   &kp MINUS                                                                                    &kp LA(LC(LG(N2)))  &kp Y   &kp U   &kp I      &kp O      &kp P     &kp BSLH
+&mo 1       &kp A         &kp S      &kp D     &kp F      &kp G   &email     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS      &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LA(LC(LG(N3)))  &kp H   &kp J   &kp K      &kp L      &kp SEMI  &kp SQT
+&kp LSHFT   &kp Z         &kp X      &kp C     &kp V      &kp B                                    &kp LS(LG(N4))             &kp UP                                               &kp N   &kp M   &kp COMMA  &kp DOT    &kp FSLH  &kp RSHFT
+&kp LCTRL   &kp LEFT_ALT  &kp MINUS  &kp PLUS  &kp EQUAL          &kp SPACE  &kp LEFT_COMMAND      &mo 1                      &kp DOWN        &kp ENTER        &kp BACKSPACE               &none   &kp LEFT   &kp RIGHT  &none     &kp TILDE
             >;
         };
 
