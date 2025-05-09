@@ -112,7 +112,7 @@
             >;
         };
 
-        layer1 {
+        swedish {
             display-name = "Fn";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &bootloader                                      &bootloader  &trans  &trans  &trans  &trans  &trans      &trans
@@ -125,7 +125,7 @@
             label = "L1";
         };
 
-        layer2 {
+        mods {
             display-name = "Fn";
             bindings = <
 &trans              &trans             &kp LA(LS(N2))      &kp LA(N3)         &trans              &trans             &bootloader                                                                             &bootloader  &trans  &none         &kp SLASH  &kp KP_MULTIPLY  &none       &kp UNDER
