@@ -115,7 +115,7 @@
         layer1 {
             display-name = "Fn";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans      &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &bootloader                                      &bootloader  &trans  &trans  &trans  &trans  &trans      &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &to 0   &trans  &trans  &trans  &trans  &trans      &kp LA(A)
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &to 0   &trans  &trans  &trans  &trans  &swedish_o  &swedish_a
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans      &trans
