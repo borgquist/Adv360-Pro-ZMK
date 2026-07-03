@@ -113,11 +113,11 @@
         bt_clr_layer {
             display-name = "BT Clear";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans      &bootloader                                                                           &bootloader  &trans         &trans         &trans             &trans              &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &bt BT_CLR  &bt BT_SEL 1                                                                          &trans       &trans         &trans         &trans             &trans              &trans  &sv_aa
-&trans  &trans  &trans  &trans  &trans  &trans      &bt BT_SEL 0  &kp LC(LG(LA(T)))  &kp LC(LG(LA(E)))      &kp LA(LC(Q))  &kp LA(LC(W))  &trans       &kp LA(LC(H))  &kp LA(LC(J))  &kp LA(LC(K))      &kp LA(LC(L))       &sv_oe  &sv_ae
-&trans  &trans  &trans  &trans  &trans  &trans                                       &trans                 &kp LA(LC(E))                              &kp LA(LC(N))  &kp LA(LC(M))  &kp LA(LC(COMMA))  &kp LA(LC(PERIOD))  &trans  &trans
-&trans  &trans  &trans  &trans  &trans              &trans        &trans             &kp LA(LC(LG(M)))      &trans         &trans         &trans                      &trans         &trans             &trans              &trans  &trans
+&trans  &trans     &trans  &trans     &trans  &trans      &bootloader                                                                           &bootloader  &trans  &trans     &trans  &trans  &trans  &trans
+&trans  &trans     &trans  &kp LC(E)  &trans  &bt BT_CLR  &bt BT_SEL 1                                                                          &trans       &trans  &kp LC(U)  &trans  &trans  &trans  &sv_aa
+&trans  &kp LC(A)  &trans  &trans     &trans  &trans      &bt BT_SEL 0  &kp LC(LG(LA(T)))  &kp LC(LG(LA(E)))      &kp LA(LC(Q))  &kp LA(LC(W))  &trans       &trans  &trans     &trans  &trans  &sv_oe  &sv_ae
+&trans  &trans     &trans  &trans     &trans  &trans                                       &trans                 &kp LA(LC(E))                              &trans  &trans     &trans  &trans  &trans  &trans
+&trans  &trans     &trans  &trans     &trans              &trans        &trans             &kp LA(LC(LG(M)))      &trans         &trans         &trans               &trans     &trans  &trans  &trans  &trans
             >;
         };
 
